@@ -1,0 +1,298 @@
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body.poshelnahuiscroll {
+    overflow: hidden;
+} 
+html.poshelnahuiscroll {
+    overflow: hidden;
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+header hr{
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 2px;
+    background-color: #000000;
+}
+header h1 a{
+    margin-left: 3em;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+
+
+
+
+
+
+/*button-header-open-navbur*/
+
+
+.header_burger{
+    visibility: visible;
+    margin-left: 5em;
+    position: relative;
+    width: 1.5em;
+    height: 1.2em;
+    cursor: pointer;
+
+}
+
+.header_burger:before,
+.header_burger:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.2em;
+    background-color: black;
+    left: 0;
+}
+
+.header_burger:before{
+    top: 0;
+}
+.header_burger:after{
+    bottom: 0;
+}
+
+.header_burger span{
+    position: absolute;
+    background-color: black;
+    left: 0;
+    width: 100%;
+    height: 0.2em;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+
+
+/*button-nav-active*/
+.header_burger.active{
+    visibility: hidden;
+}
+
+/*button-closer-nav*/
+
+.nav_header{
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.close_header_burger{
+    
+    align-items: center;
+    position: relative;
+    width: 1.5em;
+    height: 1.2em;
+    cursor: pointer;
+}
+
+.close_header_burger:before,.close_header_burger:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.2em;
+    background-color: black;
+    left: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.close_header_burger:before{
+    transform: rotate(45deg);
+}
+.close_header_burger:after{
+    transform: rotate(-45deg);
+}
+
+
+
+
+
+
+
+/*navbar-ul-list*/
+
+
+.bg_menu{
+    background-color: #000000b7;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: all 0.5s ease 0s;
+}
+
+.bg_menu.active{
+    left: 0;
+   
+}
+
+.header_menu{
+    display: flex;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    top: 0;
+    left: -100%;
+    width: 40%;
+    height: 100vh;  
+}
+
+
+.menu_logo a{
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.header_list{
+    margin-top: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 3em;
+    height: 30vh;
+
+}
+
+.header_list li{
+    list-style: none;
+
+}
+
+.header_link{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.header_link:hover{
+    color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Mein */
+main{
+    width: 80%;
+    margin: auto;
+    margin-top: 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* central photo */
+.home_central_img{
+    width: 85%;
+    height: 30em;
+    border-radius: 10em;
+    overflow: hidden;
+}   
+.home_central_img img{
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* popular product */
+
+
+
+
+
+.products{
+    margin-top: 2em;
+    margin-bottom: 7em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.product{
+    width: 15em;
+    height: 25em;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+
+}
+
+.product img{
+    width: 100%;
+}
+
+.product h3{
+    margin-left: 1em;
+    margin-bottom: 0;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.product p{
+    margin-bottom: 0;
+    font-size: 1em;
+    margin-top: 0;
+    margin-left: 1em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+
+
+.product:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #aaaaaa;
+    color: black;
+    position: relative;
+    bottom: 0;
+    padding: 1rem 0;
+    width: 100%;
+}
