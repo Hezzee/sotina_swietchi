@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/shop.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
 
@@ -17,13 +19,13 @@
         <div class="bg_menu">
             <nav class="header_menu">
                 <div class="nav_header">
-                    
+
                     <h1 class="menu_logo">
                         <a href="#">SOSAL?</a>
                     </h1>
                     <div class="close_header_burger"></div>
                 </div>
-                
+
                 <ul class="header_list">
                     <li><a class="header_link" href="index.html">Главная</a></li>
                     <li><a class="header_link" href="shop.html">Продукция</a></li>
@@ -32,44 +34,61 @@
             </nav>
         </div>
 
-        
+
 
 
 
         <h1>
             <a class="header_h1" href="#">SOSAL?</a>
         </h1>
-        
+
     </header>
 
 
 
 
+
     <main>
-        <div class="home_central_img">
-            <img  src="./img/IMG_8710.png" alt="">
-        </div>
-        <p>какой-то текст и похуй</p>
-        <p>самые популярные товары  или скидки на товары </p>
-        <div class="products">
-            <div class="product">
-                <img src="./img/IMG_8710.png" alt="">
-                <h3>название свечи</h3>
-                <p>2000zl</p>
+        <h1>Свечи</h1>
+        <div class="main_shop">
+            <div class="filter">
+                <button id="filter_btn">закрыть фильтер</button>
+                <ul id="filter_list">
+                    <li id="all">Всё</li>
+                    <li id="floral">Цветочный</li>
+                    <li id="sweet">Сладкий</li>
+                    <li id="fruity">Фруктовый</li>
+                    <li id="spicy">Пряный</li>
+                    <li id="fresh">Свежий</li>
+                    <li id="classic">Классический</li>
+                </ul>
             </div>
-            <div class="product">
-                <img src="./img/IMG_8710.png" alt="">
-                <h3>название свечи</h3>
-                <p>2000zl</p>
-            </div>
-            <div class="product">
-                <img src="./img/IMG_8710.png" alt="">
-                <h3>название свечи</h3>
-                <p>2000zl</p>
+            <div class="sort">
+                <button id="sort_menu">Сортировка</button>
+                <ul id="sort_options" class="hidden">
+                    <li data-sort="price-asc">Сначала дешевые</li>
+                    <li data-sort="price-desc">Сначала дорогие</li>
+                </ul>
+                
             </div>
 
+
+            <div class="products" id="productsContainer"></div>
+
+
         </div>
+
+
     </main>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -80,10 +99,10 @@
         <p>какая-то информация, скорее всчего инста мб почта или номера телефона</p>
     </footer>
 
-
-
     <script src="./js/jquery-3.7.1.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/product.js"></script>
 
 </body>
+
 </html>
