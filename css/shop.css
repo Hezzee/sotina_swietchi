@@ -225,6 +225,12 @@ main h1{
 
 @media screen and (max-width: 768px) {
     
+    main{
+        width: 100%;
+    }
+
+
+
     .main_shop{
         display: grid;
         grid-template-areas: 'F F S S S'
