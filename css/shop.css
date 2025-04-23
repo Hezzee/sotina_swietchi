@@ -187,3 +187,81 @@ main h1{
     transform: scale(1.1);
     
 }
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+    
+    .main_shop{
+        display: grid;
+        grid-template-areas: 'F S'
+                             'F P'
+                             'F P';
+    }
+
+    .products{
+        
+        grid-template-columns: 1fr;
+        justify-items: center;
+        
+    }
+    .products.hidden{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    
+    .main_shop{
+        display: grid;
+        grid-template-areas: 'F F S S S'
+                             'F F P P P'
+                             'F F P P P'
+                             'F F P P P'
+                             'F F P P P';
+    }
+    
+    .main_shop.hidden{
+        grid-template-areas: 'F F S S S'
+                             'P P P P P'
+                             'P P P P P'
+                             'P P P P P'
+                             'P P P P P';
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .products{
+        
+        grid-template-columns: 1fr;
+        
+    }
+    .products.hidden{
+        grid-template-columns: 1fr;
+    }
+    
+
+
+
+
+}
