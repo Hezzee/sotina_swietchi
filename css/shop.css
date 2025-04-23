@@ -263,6 +263,10 @@ main h1{
         
         grid-template-columns: 1fr;
         
+        
+    }
+    .product:hover{
+        transform: none;
     }
     .products.hidden{
         grid-template-columns: 1fr;
