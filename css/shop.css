@@ -159,7 +159,7 @@ main h1{
     cursor: pointer;
     transition: transform 0.5s ease;
     margin-bottom: 2em;
-
+    
 }
 
 .product img{
@@ -205,6 +205,30 @@ main h1{
 
     .products{
         
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        
+    }
+    .products.hidden{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    
+    
+}
+
+
+@media screen and (max-width: 950px) {
+    
+    .main_shop{
+        display: grid;
+        grid-template-areas: 'F S'
+                             'F P'
+                             'F P';
+    }
+
+    .products{
+        
         grid-template-columns: 1fr;
         justify-items: center;
         
@@ -223,9 +247,7 @@ main h1{
 
 
 
-
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 550px) {
     
     main{
         width: 100%;
